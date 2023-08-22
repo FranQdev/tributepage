@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 3rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#header-title {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  margin: 0rem;
+  padding: 0.3rem 0 0 0.75rem;
+  width: 10.75rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#page-title {
+  font-size: 4rem;
+  font-family: "Tilt Prism", cursive;
+  text-align: center;
+  margin: 0.5rem 0 1rem 0;
+}
+#page-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#kimathimonument {
+  height: 30rem;
+  width: 20rem;
+  padding-left: 1.5rem;
+}
+#kimathianimation {
+  height: 30rem;
+  width: 20rem;
+  padding-left: 1rem;
+}
+#page-article {
+  font-family: "Tulpen One", cursive;
+  float: right;
+  width: 40rem;
+  font-size: 2.3rem;
+  padding: 0 1rem 0 0;
+}
+.article-paragraphs {
+  padding-left: 1rem;
+  margin: 0 0;
+  text-indent: 2rem;
+}
+#last-paragraph {
+  padding-bottom: 1rem;
+}
+@media all and (max-width: 480px) {
+  header {
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #header-title {
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #page-content {
+    flex-direction: column;
+  }
+  #kimathimonument {
+    padding: 0 0 1rem 1rem;
+    order: 1;
+  }
+  #page-article {
+    clear: both;
+    width: 18rem;
+    font-size: 1.8rem;
+    order: 2;
+  }
+  #kimathianimation {
+    order: 3;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  header {
+    height: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #header-title {
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #page-content {
+    flex-direction: column;
+  }
+  #kimathimonunent {
+    order: 1;
+  }
+  #pagearticle {
+    order: 2;
+  }
+  #kimathianimation {
+    order: 3;
+  }
+}
